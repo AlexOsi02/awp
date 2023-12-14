@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings version="2.1"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <jaxb:globalBindings typesafeEnumMaxMembers="25000">
+        <jaxb:javaType name="java.lang.Double" xmlType="xs:decimal"/>
+
+        <xjc:javaType name="java.time.LocalDateTime" xmlType="xs:dateTime"
+                      adapter="com.osipov.lab3.adapters.DateTimeAdapter"/>
+        <xjc:simple/>
+    </jaxb:globalBindings>
+</jaxb:bindings>
